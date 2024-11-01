@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--CSS Stylesheets-->
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="css/woza.css" />
+
+    <!--Link to Font Awesome icons-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+
+    <!--Link to fonts from google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:300"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" type="image/png" href="robotfavicon.png" />
+  </head>
+
+  <body class="bground-color">
+    <!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content. -->
+
+    <div style="max-width: 2000px">
+      <!-- 1. HOME PAGE TAB -->
+      <div class="w3-animate-opacity w3-padding w3-margin-bottom bground-color">
+        <!-- 960 width region -->
+        <div class="w3-content w3-padding w3-white" style="max-width: 1200px">
+          <div
+            class="w3-center title adjust-fontcolor logo w3-center w3-margin"
+          >
+            <h1>ABOUT</h1>
+          </div>
+
+          <!-- Top Bar -->
+          <div class="w3-center">
+            <p
+              class="
+                space-letters
+                w3-tag
+                bground-color
+                w3-text-indigo w3-border w3-round
+              "
+            >
+              <a href="index.html"
+                ><i class="fa fa-angle-double-left" style="font-size: 20px"></i
+                ><b> Go back to the future...</b></a
+              >
+            </p>
+          </div>
+
+          <div class="bottom-margin">
+            <!-- Start of block -->
+            <div
+              class="
+                side-margin1
+                w3-round
+                text-color
+                space-letters
+                w3-margin-bottom
+              "
+            >
+
+              <p style="font-size: 20px" class="w3-text-red topp-margin"><b>Purpose</b></p>
+              <p style="font-size: 16px">
+                This web app uses computer vision to identify the three highest
+                probability diagnoses for a skin lesion.
+              </p>
+
+              <p style="font-size: 20px" class="w3-text-red topp-margin"><b>Lesion Types</b></p>
+
+              <p style="font-size: 18px" class="w3-text-indigo"> <b>Melanocytic nevus</b> </p>
+              <p style="font-size: 16px">
+                   Melanocytic nevus is the medical term for a mole.
+                   They are benign(non-cancerous) and typically do not require treatment.
+                   Rarely, melanocytic nevi can become cancerous.
+              </p>
+
+
+              <p style="font-size: 18px" class="w3-text-indigo"> <b>Melanoma</b> </p>
+              <p style="font-size: 16px">
+                 The most serious type of skin cancer. Most melanomas are caused by exposure to ultraviolet light.
+              </p>
+
+
+              <p style="font-size: 18px" class="w3-text-indigo"> <b>Actinic keratosis</b> </p>
+              <p style="font-size: 16px">
+                Actinic keratosis is a precancerous scaly spot found on sun-damaged skin.
+              </p>
+
+              <p style="font-size: 18px" class="w3-text-indigo"> <b>Benign keratosis</b> </p>
+              <p style="font-size: 16px">
+                Benign keratosis, also known as seborrheic keratosis, is a non-cancerous skin tumor. 
+                These growths are slow-growing, raised, and can have a rough texture or look scaly. 
+                They are more likely to appear as people age.
+              </p>
+
+              <p style="font-size: 18px" class="w3-text-indigo"> <b>Basal Cell Carcinoma</b> </p>
+              <p style="font-size: 16px">
+                Basal cell carcinoma is a common variant of epithelial skin
+                cancer that rarely metastasizes but grows destructively if
+                untreated. It appears in different morphologic variants (flat,
+                nodular, pigmented, cystic, etc.).
+              </p>
+
+              <p style="font-size: 18px" class="w3-text-indigo"> <b>Vascular skin lesions</b> </p>
+              <p style="font-size: 16px">
+                  Vascular skin lesions range from
+                  angiomas to angiokeratomas and pyogenic granulomas.
+                  Hemorrhage is also included in this category.
+              </p>
+
+              <p style="font-size: 18px" class="w3-text-indigo"> <b>Dermatofibroma</b> </p>
+              <p style="font-size: 16px">
+                  Dermatofibroma is a benign skin lesion regarded as either a
+                  benign proliferation or an inflammatory reaction to minimal
+                  trauma. It is brown often showing a central zone of fibrosis
+                  dermatoscopically.
+              </p>
+
+              <p style="font-size: 20px" class="w3-text-red topp-margin"><b>Image format</b></p>
+              <p style="font-size: 16px"> The app accepts images in jpg or png format.</p>
+
+              <p style="font-size: 20px" class="w3-text-red topp-margin"><b>Limitations</b></p>
+
+              <p style="font-size: 16px">
+                The Deep Learning model that powers this app is not skilled
+                enough to consistently assign the highest score to the correct
+                lesion. Although, the model is trained good enough to detect
+                melanoma better than others, its still better to consult a dermatologist for final opinion.
+                Also, during testing, the correct lesion was regularly among the top 3 predicted lesions.
+              </p>
+
+              <hr />
+
+              <!-- FAQ Section -->
+
+              <div
+                class="
+                  w3-center
+                  title
+                  adjust-fontcolor
+                  logo
+                  w3-center w3-margin
+                "
+              >
+                <h1 class="space-letters w3-text-red"><b>FAQ</b></h1>
+              </div>
+
+              <p class="w3-text-black topp-margin">
+                <b
+                  >Will I need to wait for the model to download every time I
+                  use the app?</b
+                >
+              </p>
+
+              <p>
+                No. Once the model downloads it will be cached in memory. The
+                next time you visit the site you won’t need to wait.
+              </p>
+
+
+              <p class="w3-text-black topp-margin">
+                <b>What do the percentage numbers mean?</b>
+              </p>
+
+              <p>
+                They show how confident the model is that a particular condition is present on
+                the image. 
+                For example, <i>Melanoma(mel)-23.50%</i> means that the model is
+                23.5% sure that the lesion shown in the image is melanoma.
+              </p>
+
+              <p class="w3-text-black topp-margin">
+                <b>How do I use this app on a computer? </b>
+              </p>
+
+              <p>
+                - Go to the site on your computer.<br />
+                - Click on "Load Model" button.<br />
+                - Click on "Demo Image" and "Predict" button for checking prediction on demo image. <br/>
+                - Click on "Upload image" and click "Open" to upload your lesion photo; then click on "Predict" button.<br />
+                - The app will print results for the image along with percentages of accuracy for top 3 predictions.
+              </p>
+
+              <p class="w3-text-black topp-margin">
+                <b>How do I use this app on a mobile phone? </b>
+              </p>
+
+              <p>
+                You can take photos of lesion and submit photos that are stored on your phone the same way as described above for computer. 
+              </p>
+            </div>
+            <!-- End of block -->
+          </div>
+        </div>
+        <!-- End of 960 width region -->
+      </div>
+      <!--END OF FAQ PAGE TAB-->
+    </div>
+    <!-- w3-content -->
+  </body>
+</html>
