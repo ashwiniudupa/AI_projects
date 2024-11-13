@@ -15,7 +15,7 @@ async function loadModel() {
   console.log("model loaded..");
 }
 
-async function loadFile() {
+/*async function loadFile() {
   console.log("image is in loadfile..");
   document.getElementById("select-file-box").style.display = "table-cell";
   document.getElementById("predict-box").style.display = "table-cell";
@@ -25,6 +25,22 @@ async function loadFile() {
   console.log(fileInputElement.files[0]);
   renderImage(fileInputElement.files[0]);
 }
+*/
+
+  // Handle image upload from file input
+  function loadFile(event) {
+    const reader = new FileReader();
+    reader.onload = function () {
+      const img = new Image();
+      img.onload = function () {
+        ctx.drawImage(img, 0, 0, outputCanvas.width, outputCanvas.height);
+        document.getElementById('test-image').src = reader.result;
+        document.getElementById('select-file-box').style.display = 'block';
+      };
+      img.src = reader.result;
+    };
+    reader.readAsDataURL(event.target.files[0]);
+  }
 
 function renderImage(file) {
   var reader = new FileReader();
@@ -100,9 +116,9 @@ async function predButton() {
   if (model == undefined) {
     alert("Please load the model first..");
   }
-  if (document.getElementById("predict-box").style.display == "none") {
+  /*if (document.getElementById("predict-box").style.display == "none") {
     alert("Please load an image using 'Demo Image' or 'Upload Image' button..");
-  }
+  }*/
   console.log(model);
   let image = document.getElementById("test-image");
   let tensor = preprocessImage(image, modelName);
